@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/petlistFragment">
+
+    <fragment
+        android:id="@+id/petlistFragment"
+        android:name="com.example.mypet.ui.PetlistFragment"
+        android:label="PetlistFragment" >
+        <action
+            android:id="@+id/action_petlistFragment_to_petFragment"
+            app:destination="@id/petFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/petFragment"
+        android:name="com.example.mypet.ui.PetFragment"
+        android:label="PetFragment" >
+        <argument
+            android:name="petIndex"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_petFragment_to_petlistFragment"
+            app:destination="@id/petlistFragment" />
+    </fragment>
+</navigation>

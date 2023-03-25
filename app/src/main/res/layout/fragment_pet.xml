@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="-10dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back_button_image"
+            app:layout_constraintBottom_toTopOf="@+id/ivPetImageDetail"
+            app:layout_constraintStart_toStartOf="@+id/ivPetImageDetail" />
+
+        <ImageView
+            android:id="@+id/ivPetImageDetail"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/dog_male" />
+
+        <TextView
+            android:id="@+id/tvPetNameDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="3dp"
+            android:textColor="@color/black"
+            android:textSize="33sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ivPetImageDetail"
+            app:layout_constraintTop_toBottomOf="@+id/ivPetImageDetail"
+            tools:text="Doggy" />
+
+        <TextView
+            android:id="@+id/tvPetAgeDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPetNameDetail"
+            app:layout_constraintStart_toEndOf="@+id/tvPetNameDetail"
+            app:layout_constraintTop_toTopOf="@+id/tvPetNameDetail"
+            tools:text="(12)" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="36dp"
+            android:text="Male:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvPetNameDetail"
+            app:layout_constraintTop_toBottomOf="@+id/tvPetNameDetail" />
+
+        <TextView
+            android:id="@+id/tvPetMaleDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            tools:text="Female"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Type:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/tvPetTypeDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="Dog" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
