@@ -16,7 +16,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvPetList"
             android:layout_width="match_parent"
-            android:layout_height="600dp"
+            android:layout_height="625dp"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="2"
             android:padding="18dp"
